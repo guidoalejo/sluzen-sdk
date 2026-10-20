@@ -1,0 +1,39 @@
+{
+  "name": "@sluzen/sdk",
+  "version": "1.5.0",
+  "description": "Sluzen x402 client: AgentClient for callers, facilitator challenge/verify/settle for the issuer server, buyer-side verifyBuyerPayment, and sluzen-handshake trial kit",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "sluzen-handshake": "dist/bin/handshake.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://sluzen.network",
+  "bugs": {
+    "url": "https://sluzen.network"
+  },
+  "keywords": [
+    "sluzen",
+    "x402",
+    "xrpl",
+    "agentic-commerce",
+    "payment-required",
+    "http-402"
+  ],
+  "author": "Vectis",
+  "license": "ISC",
+  "dependencies": {
+    "xrpl": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
